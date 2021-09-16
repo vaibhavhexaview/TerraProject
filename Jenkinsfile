@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Git Fetch') {
             steps {
-                git branch: 'main', url: 'https://github.com/vaibhavhexaview/TerraProject'
+                git 'https://github.com/vaibhavhexaview/TerraProject'
             }
         }
          stage('Initialize Infrastructure') {
